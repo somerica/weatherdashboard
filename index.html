@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather Dashboard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-body-top">
+        <h1 class="text-center title">Weather Dashboard</h1>
+      </div>
+    </div>
+
+    <p>Search for City:<span class="glyphicon-search"></span></p>
+    <!-- <form class= "search-city"> -->
+    <input
+      id="look-up"
+      type="text"
+      name="city"
+      class="form-control text-muted form rounded p-4 shadow-sm"
+    />
+    <button id="submitWeather">Search</button>
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 16 16"
+      class="bi bi-search"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+      />
+      <path
+        fill-rule="evenodd"
+        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+      />
+    </svg>
+    <!-- </form> -->
+    <div class="row">
+        <div class="col-3">
+      <div class="card">
+        
+        <div class="card-header">Cities</div>
+        <ul class="list-group list group-flush">
+          <li class="list-group-item">Austin</li>
+          <li class="list-group-item">Chicago</li>
+          <li class="list-group-item">New York</li>
+          <li class="list-group-item">Orlando</li>
+          <li class="list-group-item">San Fransisco</li>
+          <li class="list-group-item">Seattle</li>
+          <li class="list-group-item">Denver</li>
+          <li class="list-group-item">Atlanta</li>
+        </ul>
+      </div>
+        </div>
+
+      <div class="col-9">
+        <div class="card weather-card">
+          <div class="card-body">
+            <h5 class="card-title">City: <span id="currentCity"></span></h5>
+            <p class="card-title">Temp: <span id="temp"></span></p>
+            <p class="card-title">Humidity:<span id="humidity"></span></p>
+            <p class="card-title">Wind Speed:<span id="windSpeed"></span></p>
+            <p class="card-title">UV Index:<span id="uvIndex"></span></p>
+          </div>
+          
+        </div>
+        <div id="Forcast-Holder" class="row"></div>
+        
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

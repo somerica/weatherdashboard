@@ -1,0 +1,35 @@
+.card-body-top {
+
+    background-color: blue;
+    text-align: center;
+    padding: 50px;
+}
+
+.weather-card{
+    
+     background-image: url("https://www.bigcountryhomepage.com/wp-content/uploads/sites/56/2019/07/Weather-v2.jpg?w=640&h=360&crop=1&resize=1280,720");
+}
+
+.Forcast-holder{
+
+    background-color: lemonchiffon;
+}
+
+ 
+.container{
+    width :50%;
+    padding-right:20px;
+    padding-left:20px;
+    margin-right:200px;
+    margin-left:200px;
+}
+
+row  th,td  { 
+
+    padding: 15px;
+    text-align:float left;
+}
+
+
+
+
