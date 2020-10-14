@@ -13,7 +13,7 @@ $(document).ready(function () {
     if (city != "") {
       $.ajax({
         url:
-          " http://api.openweathermap.org/data/2.5/forecast?q=" +
+          " https://api.openweathermap.org/data/2.5/forecast?q=" +
           city +
           "&units=imperial&appid=10acdee4ac2bcdfc145d3f2d1200df23",
         type: "GET",
